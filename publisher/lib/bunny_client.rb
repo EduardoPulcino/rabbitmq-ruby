@@ -5,7 +5,7 @@ class BunnyClient
       @connection.start
 
       @channel = @connection.create_channel
-      @fan_out = @channel.fanout('notifications_email_out')
+      @fan_out = @channel.fanout('notifications_email.out')
 
       @connected = true
     end
